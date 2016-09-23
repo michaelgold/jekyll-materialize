@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+        <title>Holojam - Mixed Reality Software</title>
+        <!-- CSS  -->
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="description" content="Software that powers multi-user mixed reality on mobile devices">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+        <link href="assets/css/materialize.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="navbar-fixed" data-pgc-define="navbar-fixed" data-pgc-define-name="Navbar">
+            <nav role="navigation" class="darken-2 teal" id="navbar">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo white-text">Holojam</a>
+                    <ul class="right hide-on-med-and-down red-text">
+                        <li>
+                            <a href="#contact" class="white-text">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="side-nav">
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons teal-text text-accent-3">menu</i></a>
+                </div>
+            </nav>
+        </div>
+        <main data-pgc-define="main-home" data-pgc-define-name="main home">
+            <div class="section valign-wrapper" data-vide-bg="mp4: assets/video/holojam-demo.mp4, poster: assets/video/poster.png" data-vide-options="loop: true, muted: true, position: 50% 50%, resizing:true,   posterType: png" id="video-section">
+                <div class="container valign white-text center-align">
+                    <h1 class="header col s12 light">Software that powers multi-user mixed reality on mobile devices</h1>
+                    <h1 class="header"></h1>
+                </div>
+            </div>
+            <div id="contact" class="section scrollspy teal center-align">
+                <div class="container">
+                    <h3 class="center-align"><i style="" class="teal-text text-accent-3 mdi-communication-email"></i></h3>
+                    <h4 class="center-align white-text">Contact</h4>
+                    <h5 class="white-text">Reach out at <a href="mailto:hello@lavalier.co" class="white-text">hello@holojam.io</a></h5>
+                </div>
+            </div>
+        </main>
+        <footer class="darken-1 page-footer no-padding teal no-margin" data-pgc-define="footer" data-pgc-define-name="Footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by Holojam in NYC
+</div>
+            </div>
+        </footer>
+        <!--  Scripts-->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="assets/js/template.js"></script>
+        <script>
+        $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        $('.scrollspy').on('scrollSpy:enter', function() {
+        $('.navbar-fixed').find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+        });
+        $('.scrollspy').on('scrollSpy:exit', function() {
+        $('.navbar-fixed').find('a[href="#'+$(this).attr('id')+'"]').parent().removeClass('active');
+        });
+        $('#video-section').height($(window).height() - 64);
+        });
+        $(window).resize(function() {
+        $('#video-section').height($(window).height() - 64);
+        });
+        $(window).trigger('resize');
+    </script>
+        <script type="text/javascript" src="http://rawgit.com/VodkaBears/Vide/master/src/jquery.vide.js"></script>
+    </body>

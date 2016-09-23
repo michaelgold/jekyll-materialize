@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>About</title>
+        <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+        <link type="application/atom+xml" rel="alternate" href="http://yourdomain.com/feed.xml" title="Jekyll-materialize" />
+        <link type="text/css" rel="stylesheet" href="/assets/css/Material-icons.css" media="screen,projection">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app.css" media="screen,projection">
+        <link rel="canonical" href="http://yourdomain.com/about/">
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed" data-pgc="navbar-fixed">
+                <nav role="navigation" class="darken-2 teal" id="navbar">
+                    <div class="nav-wrapper container">
+                        <a id="logo-container" href="#" class="brand-logo white-text">Holojam</a>
+                        <ul class="right hide-on-med-and-down red-text">
+                            <li>
+                                <a href="#contact" class="white-text">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul id="nav-mobile" class="side-nav">
+                            <li>
+                                <a href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons teal-text text-accent-3">menu</i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card white z-depth-0">
+                                <div class="card-content">
+                                    <div class="card-title center-align">
+                                        <h2 class="thin blue-text">About</h2>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <br />
+                                    <article class="grey-text text-darken-2 post-content">
+                                        <p>Hello World! 
+Welcome to jekyll-materialize</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="darken-1 page-footer no-padding teal no-margin" data-pgc="footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by Holojam in NYC
+</div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="/assets/js/template.js"></script>
+        <!--  Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+            $('.scrollspy').on('scrollSpy:enter', function() {
+                $('.navbar-fixed').find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+            });
+
+            $('.scrollspy').on('scrollSpy:exit', function() {
+                $('.navbar-fixed').find('a[href="#'+$(this).attr('id')+'"]').parent().removeClass('active');
+            });
+        });
+    </script>
+    </body>
+</html>

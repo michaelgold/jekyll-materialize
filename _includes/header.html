@@ -1,25 +1,18 @@
-<div class="navbar-fixed">
-<nav class="white blue-text z-depth-0">
-    <ul id="slide-out" class="side-nav">
-        <li><a href="{{ site.baseurl }}/" class="blue-text">Home</a></li>
-        {% for page in site.pages %}
-            {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="blue-text">{{ page.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li>
-    </ul>
-    <div class="container container-large">
-    <a class="brand-logo" href="{{ site.baseurl }}/" class="blue-text"><span class="light blue-text">{{ site.logo }}</span></a>
-    <ul class="right hide-on-med-and-down">
-        {% for page in site.pages %}
-            {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}" class="blue-text">{{ page.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="blue-text">Feed</a></li>
-    </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse right blue-text"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
+<div class="navbar-fixed" data-pgc="navbar-fixed">
+    <nav role="navigation" class="darken-2 teal" id="navbar">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo white-text">Holojam</a>
+            <ul class="right hide-on-med-and-down red-text">
+                <li>
+                    <a href="#contact" class="white-text">Contact Us</a>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons teal-text text-accent-3">menu</i></a>
+        </div>
+    </nav>
 </div>

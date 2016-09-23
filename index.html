@@ -1,64 +1,18 @@
 ---
 layout: default
 ---
-<div class="container">
-    <div class="group-article">
-        <div class="row no-margin">
-            <div class="col s12">
-                <h2 class="blue-text center-align thin">Recent Post</h2>
-                <div class="divider"></div>
-            </div>
+<main data-pgc="main-home">
+    <div class="section valign-wrapper" data-vide-bg="mp4: assets/video/holojam-demo.mp4, poster: assets/video/poster.png" data-vide-options="loop: true, muted: true, position: 50% 50%, resizing:true,   posterType: png" id="video-section">
+        <div class="container valign white-text center-align">
+            <h1 class="header col s12 light">Software that powers multi-user mixed reality on mobile devices</h1>
+            <h1 class="header"></h1>
         </div>
-        
-        {% for post in paginator.posts %}
-        <div class="row no-margin">
-            <a class="waves-effect" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="col s12">
-                    <div class="list-article">
-                        <h4 class="blue-text thin">{{ post.title }}</h4>
-                        <p class="grey-text text-darken-1 light">Published at {{ post.date | date: "%B %-d, %Y" }}.</p>
-                        <article class="grey-text text-darken-2 post-content on-index light">
-                                {{ post.excerpt | strip_html }}. . 
-                        </article>
-                        <br/>
-                    </div>
-                    <div class="divider dashed"></div>
-                </div>
-            </a>
+    </div>
+    <div id="contact" class="section scrollspy teal center-align">
+        <div class="container">
+            <h3 class="center-align"><i style="" class="teal-text text-accent-3 mdi-communication-email"></i></h3>
+            <h4 class="center-align white-text">Contact</h4>
+            <h5 class="white-text">Reach out at <a href="mailto:hello@lavalier.co" class="white-text">hello@holojam.io</a></h5>
         </div>
-        {% endfor %}
-
     </div>
-
-    <div class="section">
-
-        {% if paginator.total_pages > 1 %}
-            <ul class="pagination center-align">
-
-                {% if paginator.previous_page %}
-                    <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-                {% else %}
-                    <li class="waves-effect disabled blue lighten-2"><a class="white-text" href="#">&laquo; Prev</a></li>
-                {% endif %}
-
-                {% for page in (1..paginator.total_pages) %}
-                    {% if page == paginator.page %}
-                        <li class="waves-effect active blue"><a href="#">{{ page }}</a></li>
-                    {% elsif page == 1 %}
-                        <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-                    {% else %}
-                        <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                    {% endif %}
-                {% endfor %}
-
-                {% if paginator.next_page %}
-                    <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-                {% else %}
-                    <li class="waves-effect disabled blue lighten-2"><a class="white-text" href="#">Next &raquo;</a></li>
-                {% endif %}
-
-            </ul>
-        {% endif %}
-
-    </div>
-</div>
+</main>
