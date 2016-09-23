@@ -13,17 +13,17 @@ owner:
     email: ichihara.rifa@gmail.com
     facebook:
         show: true
-        name: "Ichihara Rifa"
-        url: "https://fb.me/nasya.aidan"
+        name: "Michael Gold"
+        url: "https://fb.me/mkgld"
     github:
         show: true
-        username: "riefachan"
+        username: "michaelgold"
     twitter:
         show: false
         username: ""
     disqus:
         show: true
-        username: "ichihararifa"
+        username: "michaelgold"
 sass:
     sass_dir: _sass
     style: compressed
@@ -32,3 +32,4 @@ markdown: redcarpet
 highlighter: pygments
 gems:
     - jekyll-feed
+exclude: [vendor]
