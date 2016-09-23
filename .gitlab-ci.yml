@@ -5,7 +5,7 @@ test:
   stage: test
   script:
   - bundle install --path=vendor/
-  - bundle exec jekyll -d test
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
     - test
@@ -15,7 +15,7 @@ pages:
   stage: deploy
   script:
   - bundle install --path=vendor/
-  - bundle exec jekyll -d public
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
