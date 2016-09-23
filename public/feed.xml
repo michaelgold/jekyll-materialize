@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Holojam</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://www.holojam.io/</link>
+    <atom:link href="http://www.holojam.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 23 Sep 2016 00:34:39 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Sep 2016 00:34:39 -0400</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Testing GitHub Flavored Markdown</title>
+        <description>&lt;p&gt;Jekyll is simple but powerfull, and can hosted easely on github.
+This is cheat codes for creating beautiful article with GFM (Github Flavored Markdown).
+For more information about GFM, &lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5&gt;# Links&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/riefachan&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;[click here](https://github.com/riefachan)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;# italic&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;this is italic !&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;*this is italic !*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;# bold&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;this is bold !&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;**this is bold !**
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;# List&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;* Item 1
+* Item 2
+* Item 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;# code&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;function hello(){
+    return &amp;quot;Hello World!&amp;quot;;  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Return :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;```
+function hello(){
+    return &amp;quot;Hello World!&amp;quot;;    
+}
+```&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5&gt;# code (inline)&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo &amp;quot;Hello World!&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;`echo &amp;quot;Hello World!&amp;quot;;`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;# code (with highlight)&lt;/h5&gt;
+
+&lt;p&gt;Example :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Return :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{% highlight javascript %}
+function hello(){
+    return &amp;quot;Hello World!&amp;quot;;    
+}
+{% endhighlight %}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Sat, 10 Oct 2015 15:37:30 -0400</pubDate>
+        <link>http://www.holojam.io/article/testing-gitHub-flavored-markdown</link>
+        <guid isPermaLink="true">http://www.holojam.io/article/testing-gitHub-flavored-markdown</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Pain itself</title>
+        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset paulumque institisset, Quid est? Immo videri fortasse. Quid iudicant sensus? Duo Reges: constructio interrete. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Non est ista, inquam, Piso, magna dissensio.&lt;/p&gt;
+
+&lt;p&gt;Facile est hoc cernere in primis puerorum aetatulis. Longum est enim ad omnia respondere, quae a te dicta sunt. Aliud igitur esse censet gaudere, aliud non dolere. Nam si amitti vita beata potest, beata esse non potest. Facillimum id quidem est, inquam.&lt;/p&gt;
+
+&lt;p&gt;Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Quid igitur, inquit, eos responsuros putas? Sed ne, dum huic obsequor, vobis molestus sim. An hoc usque quaque, aliter in vita? Negat enim summo bono afferre incrementum diem. Quid autem habent admirationis, cum prope accesseris? Quare attende, quaeso.&lt;/p&gt;
+
+&lt;p&gt;Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Minime vero istorum quidem, inquit. Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Quamquam id quidem, infinitum est in hac urbe;&lt;/p&gt;
+
+&lt;p&gt;Multoque hoc melius nos veriusque quam Stoici. Illi enim inter se dissentiunt. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Id et fieri posse et saepe esse factum et ad voluptates percipiendas maxime pertinere. Ut proverbia non nulla veriora sint quam vestra dogmata. Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Oct 2015 20:49:37 -0400</pubDate>
+        <link>http://www.holojam.io/article/pain-itself</link>
+        <guid isPermaLink="true">http://www.holojam.io/article/pain-itself</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 Oct 2015 20:49:37 -0400</pubDate>
+        <link>http://www.holojam.io/article/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://www.holojam.io/article/welcome-to-jekyll</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>
