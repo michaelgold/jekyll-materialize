@@ -47,7 +47,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.2.1)
-  jekyll-feed
+  jekyll-feed (= 0.6.0)
   jekyll-paginate
   minima
   pygments.rb
