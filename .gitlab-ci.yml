@@ -2,7 +2,7 @@ image: ruby:2.3
 test:
   stage: test
   script:
-  - gem install jekyll
+  - gem install bundler jekyll jekyll-feed jekyll-paginate pygments.rb redcarpet
   - jekyll build -d test
   artifacts:
     paths:
@@ -12,7 +12,7 @@ test:
 pages:
   stage: deploy
   script:
-  - gem install jekyll
+  - gem install bundler jekyll jekyll-feed jekyll-paginate pygments.rb redcarpet
   - jekyll build -d public
   artifacts:
     paths:
